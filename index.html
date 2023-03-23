@@ -92,8 +92,9 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <!-- charts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <script>
       const ctx = document.getElementById('myChart');
 
@@ -108,6 +109,25 @@
           }]
         }
       });
+    </script>
+
+    <!-- background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+    <script>
+    VANTA.BIRDS({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      // backgroundColor: 0x7be6ff,
+      backgroundColor: 0xffffff,
+      quantity: 1.00
+    })
     </script>
   </body>
 </html>
